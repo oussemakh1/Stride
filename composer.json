@@ -1,0 +1,25 @@
+{
+    "name": "stride/framework",
+    "description": "A lightweight, modern, and flexible PHP framework.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Framework\\": "framework/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oussema Khlifi",
+            "email": "khoussemaa@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
+}
