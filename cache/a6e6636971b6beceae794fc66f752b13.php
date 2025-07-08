@@ -1,7 +1,7 @@
 <?php
 // We'll use this PHP block to define our code examples
 $installation_code = <<<'CODE'
-composer install
+composer create-project stride/framework my-new-project
 CODE;
 
 $routing_code = <<<'CODE'
@@ -304,6 +304,11 @@ CODE;
                         </a>
                     </li>
                     <li>
+                        <a href="#authentication" class="block py-2 px-4 rounded-md hover:bg-indigo-50 text-gray-700 hover:text-indigo-600 font-medium">
+                            <i class="fas fa-lock mr-2"></i>Authentication
+                        </a>
+                    </li>
+                    <li>
                         <a href="#further-reading" class="block py-2 px-4 rounded-md hover:bg-indigo-50 text-gray-700 hover:text-indigo-600 font-medium">
                             <i class="fas fa-book-open mr-2"></i>Further Reading
                         </a>
@@ -338,7 +343,8 @@ CODE;
                             <li><a href="#database" class="text-indigo-600 hover:text-indigo-800">8. Database Configuration</a></li>
                             <li><a href="#request" class="text-indigo-600 hover:text-indigo-800">9. Request Handling</a></li>
                             <li><a href="#cli" class="text-indigo-600 hover:text-indigo-800">10. Console Commands</a></li>
-                            <li><a href="#further-reading" class="text-indigo-600 hover:text-indigo-800">11. Further Reading</a></li>
+                            <li><a href="#authentication" class="text-indigo-600 hover:text-indigo-800">11. Authentication</a></li>
+                            <li><a href="#further-reading" class="text-indigo-600 hover:text-indigo-800">12. Further Reading</a></li>
                         </ul>
                     </details>
                 </div>
@@ -375,15 +381,9 @@ CODE;
                         <div class="mt-4 prose max-w-none">
                             <p>To get started with Stride, follow these simple steps:</p>
                             <ol class="list-decimal pl-5 mt-2 space-y-2">
-                                <li><strong>Clone the repository</strong>:
+                                <li><strong>Create a new Stride project</strong>:
                                     <div class="code-block mt-2">
-                                        <pre class="bg-gray-800 text-gray-200 p-4 rounded-lg">git clone https://github.com/your-username/stride-framework.git</pre>
-                                        <button class="copy-btn">Copy</button>
-                                    </div>
-                                </li>
-                                <li><strong>Install Composer dependencies</strong>:
-                                    <div class="code-block mt-2">
-                                        <pre class="bg-gray-800 text-gray-200 p-4 rounded-lg">composer install</pre>
+                                        <pre class="bg-gray-800 text-gray-200 p-4 rounded-lg">composer create-project stride/framework my-new-project</pre>
                                         <button class="copy-btn">Copy</button>
                                     </div>
                                 </li>
@@ -418,6 +418,7 @@ CODE;
                             Directory Structure
                         </h2>
                         <div class="mt-4">
+                            <p class="mb-4">The Stride framework follows a standard directory structure to keep your code organized and easy to navigate:</p>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div class="bg-gray-50 p-4 rounded-lg">
                                     <h3 class="font-bold text-gray-700 mb-2">Core Directories</h3>

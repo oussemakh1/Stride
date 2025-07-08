@@ -22,8 +22,6 @@ use Framework\Support\Asset;
 use Framework\Events\EventDispatcher;
 use Framework\Core\Model;
 use Framework\Container\Container;
-use App\Models\Appel;
-use App\Observers\AppelObserver;
 use Framework\Queue\Queue;
 use Framework\Security\Csrf;
 

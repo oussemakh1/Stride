@@ -18,26 +18,21 @@ Welcome to the Stride PHP Framework! Stride is a lightweight, modern, and flexib
 
 To get started with Stride, follow these simple steps:
 
-1. **Clone the repository**:
+1. **Create a new Stride project**:
    ```bash
-   git clone https://github.com/your-username/stride-framework.git
+   composer create-project stride/framework my-new-project
    ```
 
-2. **Install Composer dependencies**:
-   ```bash
-   composer install
-   ```
-
-3. **Configure your environment**:
+2. **Configure your environment**:
    - Rename the `.env.example` file to `.env`.
    - Update the `.env` file with your database credentials and other environment-specific settings.
 
-4. **Run the database migrations**:
+3. **Run the database migrations**:
    ```bash
    php stride migrate
    ```
 
-5. **Start the development server**:
+4. **Start the development server**:
    ```bash
    php -S localhost:8000 -t public
    ```
@@ -48,7 +43,7 @@ Your Stride application is now running at `http://localhost:8000`.
 
 The Stride framework follows a standard directory structure to keep your code organized and easy to navigate:
 
-- `app/`: Contains your application's core code, including Models, Views, and Controllers.
+- `app/`: Contains your application's core code, including Models, Views, Controllers, and Jobs.
 - `config/`: Stores your application's configuration files.
 - `database/`: Includes your database migrations and seeders.
 - `public/`: The web server's document root, containing the `index.php` entry point and your assets (CSS, JS, images).
